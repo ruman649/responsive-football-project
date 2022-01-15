@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Poppins:ital,wght@1,700&family=Roboto&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Poppins:ital,wght@1,500&family=Roboto&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Poppins:wght@700&family=Roboto&display=swap");
+
+/* This is for common style */
+body {
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "M PLUS Rounded 1c";
+  padding: 8px;
+  border-left: 3px solid #2d25a0;
+}
+a:hover {
+  background-color: #e02c6d;
+  transition: all 0.5s;
+}
+
+/* start header from here */
+header {
+  width: 100%;
+  background-color: #2d25a0;
+  padding-bottom: 50px;
+}
+
+.header_content {
+  width: 80%;
+  margin-left: 10%;
+}
+.header_first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 42px;
+}
+
+
+#button {
+  background-color: #e02c6d;
+  color: white;
+  padding: 9px 23px;
+  border-style: none;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 17px;
+}
+#button i {
+  margin: auto 10px;
+}
+#button:hover {
+  color: #fffefe;
+  transition: all 0.5s;
+  background-color: rgb(252, 65, 65);
+}
+
+/* header_second is starter from here */
+.header_second {
+  display: flex;
+  margin-top: 67px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.head_sec_left {
+  width: 45%;
+
+}
+.head_sec_left h1 {
+  font-size: 54px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  /* line-height: 60px; */
+}
+.head_sec_left h1:hover {
+  color: #e02c6d;
+  transition: all 1s;
+}
+.head_sec_right{
+  width: 45%
+}
+.head_sec_right img {
+  width: 100%;
+}
+.head_sec_right img:hover {
+  transform: rotate(12deg);
+  transition: all 1s;
+}
+
+
+/* main content part is start */
+.main_contect {
+  width: 80%;
+  margin-left: 10%;
+  display: grid;
+  margin-top: 39px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.image img {
+  width: 100%;
+}
+
+.content_item {
+  padding: 7px;
+  margin: 15px;
+  box-shadow:0px 0px 14px 4px grey;
+}
+.content_item:hover {
+  box-shadow: 0px 0px 7px 2px grey;
+}
+
+
+.describtion h1 {
+  font-size: 28px;
+  font-family: "Poppins";
+}
+.describtion p {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: ui-monospace;
+}
+/* main content part is end */
+
+
+
+/* bonus section  start */
+.bonus_section {
+  width: 80%;
+  margin-left: 11%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  /* align-items: center; */
+}
+.bonus_left{
+  padding: 5px;
+  line-height: 60px;
+}
+.bonus_left p{
+  line-height: 20px;
+  padding-right: 20px;
+}
+
+.bonus_left #button {
+  margin-top: 5px;
+
+}
+.bonus_left h1 {
+  font-family: "Poppins";
+  font-size: -webkit-xxx-large;
+}
+.bonus_right {
+  display: flex;
+}
+.bonus_right img {
+  width: 100%;
+
+}
+
+/* bonus section  end */
+
+/* Logo section start  */
+.logo {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 165px auto;
+}
+.logo img {
+  width: 600px;
+}
+.sociel {
+  display: flex;
+  margin-top: 29px;
+}
+.sociel_circle {
+  background-color: #e7cdd8;
+  border-radius: 100px;
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.sociel_circle i {
+  font-size: 32px;
+  color: rgb(107, 90, 90);
+}
+.sociel_circle i:hover {
+  color: #e02c6d;
+  transition: all 0.3s;
+}
+.copyright p {
+  margin-top: 49px;
+  font-size: 18px;
+  font-size: xx-large;
+  font-family: sans-serif;
+}
+/* Logo section end */
+
+
+
+@media (max-width:900px){
+  .header_first{
+    flex-direction: column;
+
+  }
+  .long_in{
+    margin-top: 5%;
+  }
+
+  .main_contect {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .head_sec_left h1{
+    font-size: 45px;
+
+  }
+  .bonus_section{
+    flex-direction: column;
+  }
+  .bonus_left{
+    margin-bottom: 55px;
+  }
+  .bonus_left #button {
+    margin-top: 1px;
+  }
+}
+
+
+@media (max-width:768px){
+
+  .nav_icons{
+    display: flex;
+    font-size: 16px;
+  }
+  .nav_icons a:hover{
+    border-left: 3px solid #920b3c;
+  }
+
+  .head_sec_left h1{
+    font-size: 33px;
+  }
+  .main_contect {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .logo img {
+    width: 400px;
+  }
+}
